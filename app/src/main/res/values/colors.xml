@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#2f477a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackgroundStart">#dcdee3</color>
+    <color name="colorBackgroundResume">#4267b2</color>
+    <color name="colorButtonLogin">#4e69a2</color>
+    <color name="colorTextButtonLogin">#9daccb</color>
+    <color name="colorTextForgotPassword">#4267b2</color>
+    <color name="colorOR">#ced0d4</color>
+    <color name="colorButtonNewFB">#42b72a</color>
+    <color name="colorTextWhite">#ffffff</color>
+
+</resources>

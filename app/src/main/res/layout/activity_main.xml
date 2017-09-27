@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTextWhite"
+    tools:context="com.example.a.projectassignmentui.Activity_Screen.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/banner" />
+
+    <LinearLayout
+        android:id="@+id/layout_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếng Việt •" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Español •" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" More..."
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_linear_edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/layout_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="32.33dp"
+            android:layout_marginRight="32.33dp"
+            android:layout_weight="1"
+            android:inputType="textVisiblePassword"
+
+            android:hint="Email or Phone" />
+
+        <EditText
+            android:id="@+id/editTextPass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="32.33dp"
+            android:layout_marginRight="32.33dp"
+            android:layout_weight="1"
+            android:inputType="textVisiblePassword"
+
+            android:hint="Password" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnLogin1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="32.33dp"
+                android:layout_marginRight="32.33dp"
+                android:background="@color/colorButtonLogin"
+                android:text="LOG IN"
+                android:textColor="@color/colorTextButtonLogin" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_forgot_passsword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_linear_edittext1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="FORGOT PASSWORD?"
+        android:textColor="@color/colorTextForgotPassword"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_forgot_passsword1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="32.33dp"
+        android:layout_marginRight="32.33dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="136dp"
+            android:layout_height="1dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorOR" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="OR"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <View
+            android:layout_width="136dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorOR" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/layout_or"
+        android:layout_marginLeft="51.33dp"
+        android:layout_marginRight="51.33dp"
+        android:layout_marginTop="12.67dp"
+        android:background="@color/colorButtonNewFB"
+        android:text="CREATE NEW FACEBOOK ACCOUNT"
+        android:textColor="@color/colorTextWhite" />
+
+<!--Layout Focus Keyboard Show-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/layout_main_focus"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="350dp"-->
+        <!--android:background="@color/colorTextWhite">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/image_view"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:src="@drawable/iconfb2" />-->
+
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layout_linear_edittext"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:layout_below="@id/image_view"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:weightSum="4"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/editText2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:inputType="textVisiblePassword"-->
+                <!--android:layout_marginLeft="32.33dp"-->
+                <!--android:layout_marginRight="32.33dp"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:hint="Email or Phone" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/editText"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_marginLeft="32.33dp"-->
+                <!--android:layout_marginRight="32.33dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:inputType="textVisiblePassword"-->
+                <!--android:hint="Password" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btnLogin"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginLeft="32.33dp"-->
+                    <!--android:layout_marginRight="32.33dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:background="@color/colorButtonLogin"-->
+                    <!--android:text="LOG IN"-->
+                    <!--android:textColor="@color/colorTextButtonLogin" />-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/txt_forgot_passsword"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="18dp"-->
+                    <!--android:text="CREATE NEW FACEBOOK ACCOUNT"-->
+                    <!--android:textColor="@color/colorTextForgotPassword"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_centerHorizontal="true" />-->
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+
+
+
+</RelativeLayout>
+
