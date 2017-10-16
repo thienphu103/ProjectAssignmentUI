@@ -62,7 +62,6 @@
             android:layout_marginRight="32.33dp"
             android:layout_weight="1"
             android:inputType="textVisiblePassword"
-
             android:hint="Email or Phone" />
 
         <EditText
@@ -73,7 +72,6 @@
             android:layout_marginRight="32.33dp"
             android:layout_weight="1"
             android:inputType="textVisiblePassword"
-
             android:hint="Password" />
 
         <RelativeLayout
@@ -142,6 +140,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_resgiter"
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_below="@+id/layout_or"
